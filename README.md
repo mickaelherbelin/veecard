@@ -1,4 +1,4 @@
-# Veecard Theme for Wordpress
+# Veecard Theme for Wordpress v1.0.3.1
 
 Simple and responsive theme, suitable as a vCard website.
 
