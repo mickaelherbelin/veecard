@@ -4,6 +4,7 @@
    color:#575746;
    text-shadow: none;
 }
+    
 a {
 	color:#666;
 }
@@ -29,4 +30,8 @@ h2, h3, .job-title, .job-education-title, .error, .thanks  {
 }
 .twitter-timeline{
 	margin-top:40px;
+}
+.footer-container footer {
+    color: #000;
+    text-shadow: 0;
 }
