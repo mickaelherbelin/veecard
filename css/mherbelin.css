@@ -18,6 +18,13 @@ h2, h3, .job-title, .job-education-title, .error, .thanks  {
 .main h1 {
 	color:#181818;
 }
+.main h1.bio-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 3.2em;
+    color: #0b4d5e;
+    border: 0;
+}
 
 #intro {
 	color:#000;

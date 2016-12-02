@@ -10,7 +10,18 @@ get_header(); ?>
 		</header>
 			<section>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<?php //the_content(); ?>
+			<?php the_content(); ?>
+            <?php $attachments = new Attachments( 'attachments' ); /* pass the instance name */ ?>
+				<?php if( $attachments->exist() ) : ?>
+                  <h3>Document(s) li&eacute;(s)</h3>
+                  <ul>
+                    <?php while( $attachments->get() ) : ?>
+                      <li class="attachment">
+                        <?php echo $attachments->image( 'thumbnail' ); ?>&nbsp;<a href="<?php echo $attachments->url(); ?>" title="<?php echo $attachments->field( 'title' ); ?>" target="_blank"><?php echo $attachments->field( 'title' ); ?></a>&nbsp;(<?php echo $attachments->type(); ?> - <?php echo $attachments->filesize(); ?>)
+                      </li>
+                    <?php endwhile; ?>
+                  </ul>
+                <?php endif; ?>
 			<?php endwhile; endif; ?>
 
 
@@ -45,7 +56,7 @@ get_header(); ?>
 				global $post;
 							$term = get_query_var('term');
        						$tax = get_query_var('taxonomy');
-							$args=array('post_type'=> 'portfolio','post_status'=> 'publish', 'orderby'=> 'menu_order', 'caller_get_posts'=>1, 'paged'=>$paged, 'posts_per_page'=>9);
+							$args=array('post_type'=> 'portfolio','post_status'=> 'publish', 'orderby'=> 'date', 'order'=> 'DESC', 'caller_get_posts'=>1, 'paged'=>$paged, 'posts_per_page'=>20);
 							$taxargs = array($tax=>$term);
 							if($term!='' && $tax!='') { $args  = array_merge($args, $taxargs); }
 
