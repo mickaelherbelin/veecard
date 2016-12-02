@@ -4,7 +4,9 @@
    color:#575746;
    text-shadow: none;
 }
-    
+.main-container{
+	box-shadow:none;
+}   
 a {
 	color:#666;
 }
