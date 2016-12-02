@@ -13,5 +13,4 @@
 			<?php endwhile; endif;?>
 
 		</article>
-
 <?php get_footer(); ?>
