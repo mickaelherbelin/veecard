@@ -84,9 +84,7 @@ function optionsframework_options() {
 
     $skins_array = array(
     "default" => "default.css",
-    "light.css" => "light.css",
-    //update call customized CSS
-    "mherbelin.css" => "mherbelin.css"
+    "light.css" => "light.css"
     );
 
     $patterns_array = array(
@@ -97,7 +95,8 @@ function optionsframework_options() {
     "pattern_03" => "Pattern 4",
     "pattern_04" => "Pattern 5",
     "pattern_05" => "Pattern 6",
-    "pattern_06" => "Pattern 7"
+    "pattern_06" => "Pattern 7",
+    "pattern_07" => "Pattern 8"
     );
 
 
