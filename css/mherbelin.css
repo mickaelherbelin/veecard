@@ -1,0 +1,32 @@
+.main {
+   background-color: #FFFFFF !important;
+   background-image:none;
+   color:#575746;
+   text-shadow: none;
+}
+a {
+	color:#666;
+}
+a:hover {
+	color:#000;
+}
+h2, h3, .job-title, .job-education-title, .error, .thanks  {
+	color:#181818;
+}
+
+.main h1 {
+	color:#181818;
+}
+
+#intro {
+	color:#000;
+}
+.main ul li.attachment{
+	list-style-type:none;
+}
+#bio ul li, .box, .filterable, .commentlist li, .commentlist li ul.children li, .side_widget    {
+    border:0;
+}
+.twitter-timeline{
+	margin-top:40px;
+}
