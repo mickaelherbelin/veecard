@@ -229,7 +229,7 @@ msgstr "Informations personnelles"
 
 #: single-resume.php:61
 msgid "Employment"
-msgstr ""
+msgstr "Expériences professionnelles"
 
 #: single-resume.php:91
 msgid "Education"
