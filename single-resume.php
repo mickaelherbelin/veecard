@@ -91,6 +91,7 @@ $bio_url = get_post_meta($post->ID,'resumebio_bio_url',true);
 		        <?php
 		        //Pull education info from custom meta
 				$education_info = get_post_meta($post->ID,'resume_edu_',true);
+				arsort($education_info);
 				if($education_info != '') {
 				?>
 		        <h2><?php _e("Education", "site5framework"); ?></h2>
