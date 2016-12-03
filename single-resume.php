@@ -62,7 +62,8 @@ $bio_url = get_post_meta($post->ID,'resumebio_bio_url',true);
 		        <div class="box clearfix">
 
 					<?php
-						
+						//classement décroissant
+						arsort($employment_info);
 						foreach ($employment_info as $arr){
 						?>
 						<div class="col_half first">
