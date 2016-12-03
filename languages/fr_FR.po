@@ -224,8 +224,8 @@ msgid "Add Widget"
 msgstr ""
 
 #: single-resume.php:43
-msgid "Informations personnelles"
-msgstr ""
+msgid "Personal Information"
+msgstr "Informations personnelles"
 
 #: single-resume.php:61
 msgid "Employment"
